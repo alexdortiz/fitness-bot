@@ -1,0 +1,4 @@
+.env
+node_modules/
+.strava-tokens.json
+.garmin-tokens.json
