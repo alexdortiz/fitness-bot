@@ -130,6 +130,14 @@ function loadStravaTokens() {
   try {
     return JSON.parse(fs.readFileSync(STRAVA_TOKEN_FILE, 'utf8'));
   } catch {
+    // Fall back to environment variables (for Render deployment)
+    if (process.env.STRAVA_ACCESS_TOKEN) {
+      return {
+        access_token: process.env.STRAVA_ACCESS_TOKEN,
+        refresh_token: process.env.STRAVA_REFRESH_TOKEN,
+        expires_at: parseInt(process.env.STRAVA_TOKEN_EXPIRES_AT || '0'),
+      };
+    }
     return null;
   }
 }
