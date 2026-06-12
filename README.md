@@ -4,7 +4,7 @@ An AI fitness assistant that syncs activities from Strava and wellness data (HRV
 
 Commercial platforms keep activity data and recovery data in separate silos. This agent reasons across both: ask "how was my ride today" and it cross-references the ride against last night's sleep, HRV, and recent training load.
 
-![Demo](<img width="509" height="664" alt="Screenshot 2026-06-12 091543" src="https://github.com/user-attachments/assets/f36c4f03-88c6-4066-adb3-951b4a4dab70" />)
+(<img width="509" height="664" alt="Screenshot 2026-06-12 091543" src="https://github.com/user-attachments/assets/f36c4f03-88c6-4066-adb3-951b4a4dab70" />)
 
 
 ## Architecture
